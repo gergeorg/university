@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Университет сервиса</title>
+  <link rel="stylesheet" href="css/global.min.css">
+  <link rel="stylesheet" href="css/vendor.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- <script defer src="https://api-maps.yandex.ru/2.1/?apikey=APIkey&lang=ru_RU"></script> -->
+  <script defer src="js/vendor.min.js"></script>
+  <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <div class="site-container">
+    @include('partials/header.html')
+
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/blockquote.html')
+      @include('partials/education.html')
+      @include('partials/about.html')
+      @include('partials/teachers.html')
+
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('partials/modal.html') -->
+  </div>
+</body>
+
+</html>

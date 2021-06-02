@@ -1,0 +1,107 @@
+.about {
+  padding-top: 96px;
+  padding-bottom: 50px;
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 53px;
+  }
+
+  &__card-bg {
+    margin-bottom: 20px;
+    width: 317px;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__card-num {
+    padding: 48px 0;
+    display: block;
+    font-family: 'FuturaPT', sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 123px;
+    color: $colorWhite;
+    text-align: center;
+  }
+
+  &__card-text {
+    max-width: 90%;
+    font-family: 'FuturaPT', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  .card-1 {
+    background-image: url(../img/about_bg-1.jpg);
+  }
+
+  .card-2 {
+    background-image: url(../img/about_bg-2.jpg);
+  }
+
+  .card-3 {
+    background-image: url(../img/about_bg-3.jpg);
+  }
+
+  .card-4 {
+    background-image: url(../img/about_bg-4.jpg);
+  }
+
+  &__text {
+    margin-bottom: 23px;
+    font-family: 'Fellaz', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 69px;
+    color: $colorWhite;
+  }
+
+  &__text-orange {
+    max-width: 50%;
+    color: $colorOrange;
+  }
+
+  &__text-anakiwa {
+    color: $colorAnakiwa;
+  }
+
+  &__text-saffron {
+    color: $colorSaffron;
+  }
+
+
+  &__col {
+    margin-left: 50%;
+  }
+
+  &__photo {
+    margin-bottom: 100px;
+  }
+
+  &__col-top,
+  &__col-bottom {
+    position: relative;
+  }
+
+  .photo-3 {
+    position: absolute;
+    top: 57px;
+    left: -466px;
+  }
+
+  .photo-4 {
+    position: absolute;
+    top: -200px;
+    left: -710px;
+  }
+
+}

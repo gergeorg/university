@@ -1,0 +1,43 @@
+.blockquote {
+  padding-top: 130px;
+  padding-bottom: 78px;
+
+  &__container {
+    background-image: url(../img/arrow_bg.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  &__text {
+    position: relative;
+    padding-left: 237px;
+    margin-right: 370px;
+    // max-width: 814px;
+    font-family: 'Fellaz', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 69px;
+    color: $colorGold;
+
+    &::after {
+      content: '';
+      width: 123px;
+      height: 72px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: url(../img/blockquote.svg);
+    }
+
+    &::before {
+      content: '';
+      width: 2px;
+      height: 80%;
+      position: absolute;
+      left: 200px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-left: 1px solid rgba($colorGold, 0.3);
+    }
+  }
+}

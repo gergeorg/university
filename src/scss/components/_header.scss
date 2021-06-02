@@ -1,0 +1,58 @@
+@import "vars";
+
+.header {
+  padding: 47px 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 61px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 91px;
+    }
+  }
+
+  &__link {
+    font-family: 'FuturaPT', sans-serif;
+    color: $colorWhite;
+    font-size: 18px;
+    line-height: 23px;
+    transition: color .3s ease-in-out;
+
+    &:hover {
+      color: $colorGold;
+    }
+  }
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  width: 24px;
+  height: 16px;
+
+  &__line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorWhite;
+  }
+}

@@ -1,0 +1,78 @@
+.education {
+  // position: relative;
+
+  &__container {
+    // height: 472px;
+    display: grid;
+    grid-template-columns:472px 472px 472px;
+    grid-template-rows: 463px 266px;
+  }
+
+  &__link {
+    padding: 40px 30px;
+    height: 100%;
+    transition: background-image .3s ease-in-out;
+    // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
+  }
+
+  &__link-num {
+    display: block;
+    font-family: 'Fellaz', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 103px;
+    letter-spacing: -0.025em;
+    color: $colorWhite;
+  }
+
+  &__link-text {
+    font-family: 'Fellaz', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    color: $colorWhite;
+  }
+
+  .card_1 {
+    grid-row: 1/3;
+    background-image: url(../img/education_bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+
+  .card_2 {
+    grid-row: 1/3;
+    background-image: url(../img/education_bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+
+  .card_3 {
+    background-image: url(../img/education_bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+
+  .card_4 {
+    background-image: url(../img/education_bg-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+}
