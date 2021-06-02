@@ -19,7 +19,7 @@ const svgSprite = require('gulp-svg-sprite')
 const htmlMin = require('gulp-htmlmin')
 
 
-//функция по сбору/объединению html файлов 
+//функция по сбору/объединению html файлов
 const htmlInclude = () => {
     return src('./src/*.html')
         .pipe(fileInclude({
@@ -98,7 +98,7 @@ const jsVendor = () => {
         .pipe(browserSync.stream())
 }
 
-//функция по конвертации ttf в woff и woff2 
+//функция по конвертации ttf в woff и woff2
 const fonts = () => {
     src('./src/fonts/**.ttf')
         .pipe(ttf2woff())
@@ -140,7 +140,7 @@ const clean = () => {
 
 //минимизация html для build
 const htmlMinify = () => {
-    // return src('app/**/*.html') 
+    // return src('app/**/*.html')
     return src('./app/**/*.html')
         .pipe(htmlMin({
             collapseWhitespace: true,
@@ -196,7 +196,7 @@ const jsBuild = () => {
 //build функция для объединения js файлов библиотек, минимизации
 const jsVendorBuild = () => {
     return src('./src/js/vendor/*.js')
-        .pipe(concat('script.js'))
+        .pipe(concat('vendor.js'))
         .pipe(dest('./app/js'))
         .pipe(rename({
             extname: '.min.js'
@@ -236,7 +236,7 @@ const watchFiles = () => {
     watch('./src/img/*.svg', svgSprites)
     watch('./src/resources/**', resources)
     watch('./src/resources/**.ttf', fonts)
-    
+
 }
 
 exports.watchFiles = watchFiles;

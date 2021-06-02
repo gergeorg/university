@@ -1,0 +1,29 @@
+.mission {
+  padding-top: 125px;
+  padding-bottom: 159px;
+  background-color: $colorWhite;
+
+  &__container {
+    background-image: url(../img/mission-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__text {
+    max-width: 50%;
+    font-family: 'FuturaPT', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+    color: #17181A;
+  }
+
+  &__left {
+    padding-top: 86px;
+  }
+
+  &__right {
+    margin-top: 493px;
+    margin-left: 50%;
+  }
+}

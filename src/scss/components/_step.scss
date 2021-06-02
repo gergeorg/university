@@ -1,0 +1,85 @@
+.step {
+  padding-bottom: 100px;
+
+  &__container {
+    padding-top: 301px;
+    position: relative;
+  }
+
+  &__images {
+    position: absolute;
+    top: -80px;
+    left: 0;
+  }
+
+  &__img {
+    &:not(:last-child)  {
+      margin-right: 15px;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 150px;
+    top: 130px;
+  }
+
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding-top: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image .3s ease-in-out;
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  &__link-big {
+    width: 710px;
+    height: 220px;
+    margin-right: 134px;
+    background-image: url(../img/step_link-bg-1.jpg);
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+
+  &__link-small {
+    width: 277px;
+    height: 220px;
+
+    &:not(:last-child)  {
+      margin-right: 22px;
+    }
+  }
+
+  .link-bg-1{
+    background-image: url(../img/step_link-bg-2.jpg);
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+
+  .link-bg-2{
+    background-image: url(../img/step_link-bg-3.jpg);
+
+    &:hover {
+      background-image: url(../img/01.gif);
+    }
+  }
+}

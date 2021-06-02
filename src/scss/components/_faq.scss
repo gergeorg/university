@@ -1,0 +1,69 @@
+.accordion {
+  padding-bottom: 100px;
+  &__item {
+    border-bottom: 1px solid #FFD600;
+  }
+  &__control {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+    box-sizing: content-box;
+
+  }
+
+  &__content-text {
+    font-family: 'Futura PT';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+
+  &__title {
+    font-family: 'Futura PT';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  &__icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url(../img/accordion-arrow.svg);
+    transform: rotate(0deg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-out;
+  }
+
+  &__link {
+    color: $colorAnakiwa;
+  }
+
+  .open .accordion__icon {
+    transform: rotate(180deg);
+  }
+
+  .open .accordion__content {
+    opacity: 1;
+  }
+}
+
+

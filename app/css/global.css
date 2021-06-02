@@ -1,5 +1,13 @@
 @font-face {
   font-family: 'FuturaPT';
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaPT';
   src: url("../fonts/FuturaPT-Book.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
