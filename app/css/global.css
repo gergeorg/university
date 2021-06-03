@@ -108,6 +108,8 @@ p {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1450px;
+  width: 100%;
+  min-width: 320px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -147,4 +149,21 @@ p {
   background-image: url(../img/title-arrow.svg);
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
 }

@@ -17,11 +17,9 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    margin-bottom: 20px;
     will-change: max-height;
     transition: all 0.3s ease-out;
     box-sizing: content-box;
-
   }
 
   &__content-text {
@@ -31,7 +29,6 @@
     line-height: 31px;
     color: $colorWhite;
   }
-
 
   &__title {
     font-family: 'Futura PT';
@@ -43,6 +40,7 @@
 
   &__icon {
     display: block;
+    padding-left: 40px;
     width: 35px;
     height: 35px;
     background-image: url(../img/accordion-arrow.svg);
@@ -63,7 +61,39 @@
 
   .open .accordion__content {
     opacity: 1;
+    margin-bottom: 20px;
   }
 }
 
+@media (max-width: 1024px) {
+  .accordion {
+
+    &__control {
+      padding: 10px 0;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 23px;
+      text-align: left;
+    }
+
+    &__content-text {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .accordion {
+    padding-bottom: 25px;
+  }
+}
 

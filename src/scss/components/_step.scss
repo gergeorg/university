@@ -9,10 +9,14 @@
   &__images {
     position: absolute;
     top: -80px;
-    left: 0;
+    left:15px;
   }
 
   &__img {
+    width: 354px;
+    height: 164px;
+    object-fit: cover;
+
     &:not(:last-child)  {
       margin-right: 15px;
     }
@@ -47,6 +51,10 @@
     color: $colorWhite;
   }
 
+  // &__link-text {
+  //   display: block;
+  // }
+
   &__link-big {
     width: 710px;
     height: 220px;
@@ -80,6 +88,105 @@
 
     &:hover {
       background-image: url(../img/01.gif);
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .step {
+    &__link-big {
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    padding-bottom: 24px;
+
+    .step__container {
+      padding-top: 150px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__images {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      top: -60px;
+      left: 0;
+    }
+
+    &__img {
+      width: 145px;
+      height: 120px;
+
+      &:not(:last-child)  {
+        margin-right: 15px;
+      }
+    }
+
+    &__arrow {
+      width: 63px;
+      height: 73px;
+      left: 30%;
+      top: 90px;
+    }
+
+    &__links {
+      flex-wrap: wrap;
+    }
+
+    &__link {
+      position: relative;
+      margin-bottom: 16px;
+      padding-top: 0;
+      width: 100%;
+    }
+
+    &__link-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      // width: 100%;
+      transform: translate(-50%, -50%,)
+    }
+
+    &__link-big {
+      width: 100%;
+      margin-right: 0;
+      height: 120px;
+    }
+
+    &__link-small {
+      width: 48.5%;
+      height: 120px;
+
+      &:not(:last-child)  {
+        margin-right: auto;
+      }
+    }
+
+    .link-bg-1{
+      background-image: url(../img/step_link-bg-2-mob.jpg);
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .step {
+    .step__container {
+      padding-top: 100px;
+    }
+
+    &__link-text {
+      font-family: 'FuturaPT';
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 31px;
     }
   }
 }

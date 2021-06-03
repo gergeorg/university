@@ -24,7 +24,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 91px;
+      margin-right: 90px;
     }
   }
 
@@ -54,5 +54,30 @@
     width: 100%;
     height: 1px;
     background-color: $colorWhite;
+  }
+}
+
+
+
+@media (max-width: 1024px) {
+  .nav {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    padding: 24px 0 12px;
   }
 }

@@ -7,20 +7,22 @@
 
   &__cards {
     display: flex;
-    // align-items: center;
     justify-content: space-between;
   }
 
   &__card {
     position: relative;
-    padding-bottom: 80px;
-    width: 317px;
+    max-width: 317px;
     display: flex;
     flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: auto;
+    }
   }
 
   &__card-img {
-    width: 317px;
+    width: 100%;
     height: 220px;
     margin-bottom: 20px;
     object-fit: contain;
@@ -38,21 +40,121 @@
   }
 
   &__card-link {
+    position: relative;
     font-family: 'Futura PT';
     font-weight: 40;
     font-size: 24px;
     line-height: 31px;
     color: $colorWhite;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 45px;
-      height: 45px;
-      background-image: url(../img/news-arrow.svg);
-      background-repeat: no-repeat;
+  &__link-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 110px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .news {
+    &__card {
+      max-width: 280px;
+
+      &:not(:last-child) {
+        margin-right: auto;
+      }
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .news {
+    &__card {
+      max-width: 240px;
+
+      &:not(:last-child) {
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .news {
+    padding-bottom: 50px;
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      min-width: 48%;
+      margin-bottom: 15px;
+      padding-bottom: 0;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+
+    &__card-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      object-fit: contain;
+      font-size: 0;
+    }
+
+    &__card-icon {
+      padding-top: 15px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .news {
+    padding-bottom: 30px;
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      min-width: 100%;
+      margin-bottom: 15px;
+      padding-bottom: 0;
+    }
+
+    &__card-img {
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 8px;
+    }
+
+    &__link-wrapper{
+      flex-direction: row;
+      height: auto;
+    }
+
+    &__card-icon {
+      padding-top: 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__card-data {
+      font-size: 15px;
+      line-height: 19px;
+
+    }
+
+    &__card-link {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+}
+

@@ -241,7 +241,7 @@ const watchFiles = () => {
 
 exports.watchFiles = watchFiles;
 
-exports.default = series(clean, parallel(htmlInclude, stylesSCSS, stylesVendor, js, jsVendor, imgToApp, fonts), watchFiles);
+exports.default = series(clean, parallel(htmlInclude, stylesSCSS, stylesVendor,svgSprites, js, jsVendor, imgToApp, fonts), watchFiles);
 
 exports.build = series(clean, htmlInclude, jsBuild, jsVendorBuild, stylesBuild, stylesVendorBuild, resources, images, fonts, svgSprites, htmlMinify, watchFiles);
 

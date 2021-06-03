@@ -1,9 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 6,
-    spaceBetween: 15,
+    slidesPerView: 2,
+    spaceBetween: 10,
     centeredSlides: true,
     loop: true,
+
+    breakpoints: {
+
+      1440: {
+        slidesPerView: 6,
+      }
+    }
   });
 
 	const accordions = document.querySelectorAll('.accordion__item');

@@ -20,7 +20,7 @@
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 91px;
+  margin-right: 90px;
 }
 
 .nav__link {
@@ -100,6 +100,7 @@
   left: 0;
   top: 0;
   background-image: url(../img/blockquote.svg);
+  background-size: contain;
 }
 
 .blockquote__text::before {
@@ -113,9 +114,13 @@
   border-left: 1px solid rgba(255, 214, 0, 0.3);
 }
 
+blockquote {
+  margin-left: 19px;
+}
+
 .education__container {
   display: grid;
-  grid-template-columns: 472px 472px 472px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 463px 266px;
 }
 
@@ -123,6 +128,8 @@
   padding: 40px 30px;
   height: 100%;
   transition: background-image .3s ease-in-out;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .education__link-num {
@@ -146,8 +153,6 @@
 .education .card_1 {
   grid-row: 1/3;
   background-image: url(../img/education_bg-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .education .card_1:hover {
@@ -157,8 +162,6 @@
 .education .card_2 {
   grid-row: 1/3;
   background-image: url(../img/education_bg-2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .education .card_2:hover {
@@ -167,8 +170,6 @@
 
 .education .card_3 {
   background-image: url(../img/education_bg-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .education .card_3:hover {
@@ -177,8 +178,6 @@
 
 .education .card_4 {
   background-image: url(../img/education_bg-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .education .card_4:hover {
@@ -196,14 +195,18 @@
 
 .about__cards {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 53px;
 }
 
+.about__card {
+  margin-bottom: 15px;
+  width: 317px;
+}
+
 .about__card-bg {
   margin-bottom: 20px;
-  width: 317px;
-  height: 220px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -325,7 +328,8 @@
 
 .teachers .swiper-slide {
   padding: 20px 28px;
-  height: 380px;
+  min-height: 380px;
+  max-width: 240px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -409,6 +413,7 @@
   background-image: url(../img/mission-bg.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: center;
 }
 
 .mission__text {
@@ -441,7 +446,14 @@
 .step__images {
   position: absolute;
   top: -80px;
-  left: 0;
+  left: 15px;
+}
+
+.step__img {
+  width: 354px;
+  height: 164px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .step__img:not(:last-child) {
@@ -532,7 +544,6 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  margin-bottom: 20px;
   will-change: max-height;
   transition: all 0.3s ease-out;
   box-sizing: content-box;
@@ -556,6 +567,7 @@
 
 .accordion__icon {
   display: block;
+  padding-left: 40px;
   width: 35px;
   height: 35px;
   background-image: url(../img/accordion-arrow.svg);
@@ -576,6 +588,7 @@
 
 .accordion .open .accordion__content {
   opacity: 1;
+  margin-bottom: 20px;
 }
 
 .news {
@@ -593,14 +606,17 @@
 
 .news__card {
   position: relative;
-  padding-bottom: 80px;
-  width: 317px;
+  max-width: 317px;
   display: flex;
   flex-direction: column;
 }
 
+.news__card:not(:last-child) {
+  margin-right: auto;
+}
+
 .news__card-img {
-  width: 317px;
+  width: 100%;
   height: 220px;
   margin-bottom: 20px;
   -o-object-fit: contain;
@@ -619,6 +635,7 @@
 }
 
 .news__card-link {
+  position: relative;
   font-family: 'Futura PT';
   font-weight: 40;
   font-size: 24px;
@@ -626,15 +643,11 @@
   color: #fff;
 }
 
-.news__card-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 45px;
-  height: 45px;
-  background-image: url(../img/news-arrow.svg);
-  background-repeat: no-repeat;
+.news__link-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
 }
 
 .footer {
@@ -715,4 +728,653 @@
   font-size: 18px;
   line-height: 23px;
   color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .hero__title {
+    font-size: 136px;
+    line-height: 150px;
+  }
+
+  .blockquote {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .blockquote__container {
+    background-size: 40%;
+  }
+
+  .blockquote__text {
+    padding-left: 150px;
+    margin-right: 30%;
+  }
+
+  .blockquote__text::before {
+    position: absolute;
+    left: 120px;
+  }
+
+  .about__cards {
+    margin-bottom: 24px;
+  }
+
+  .about__card {
+    width: 48%;
+  }
+
+  .about__text-orange {
+    max-width: 70%;
+  }
+
+  .about .photo-4 {
+    width: 450px;
+    left: -466px;
+  }
+
+  .news__card {
+    max-width: 280px;
+  }
+
+  .news__card:not(:last-child) {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .education__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .education__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .education__link:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .education__link-text {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .about__text {
+    margin-bottom: 23px;
+    font-family: Fellaz,sans-serif;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 56px;
+  }
+
+  .university {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 98px;
+  }
+
+  .university__title {
+    margin-right: 0;
+    font-size: 98px;
+  }
+
+  .news__card {
+    max-width: 240px;
+  }
+
+  .news__card:not(:last-child) {
+    margin-right: auto;
+  }
+
+  .footer-nav__list:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav__item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  .hero__title {
+    font-size: 100px;
+    line-height: 120px;
+  }
+
+  .blockquote__container {
+    background-position: bottom right;
+  }
+
+  .blockquote__text {
+    padding-left: 150px;
+    margin-right: 15%;
+    font-size: 35px;
+    line-height: 49px;
+  }
+
+  .about__text {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .about__col {
+    margin-left: 0;
+  }
+
+  .about__col-top {
+    margin-bottom: 15px;
+  }
+
+  .about__col-bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 105px;
+  }
+
+  .about .photo-1 {
+    width: 100%;
+    margin-bottom: 65%;
+  }
+
+  .about .photo-2 {
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .about .photo-3 {
+    width: 50%;
+    top: 30%;
+    left: 0;
+  }
+
+  .about .anakiwa {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 30%;
+  }
+
+  .about .photo-4 {
+    position: static;
+    width: 100%;
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .about .saffron {
+    order: 3;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .mission {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .mission__left {
+    padding-top: 0;
+  }
+
+  .mission__right {
+    margin-top: 400px;
+    margin-left: 45%;
+  }
+
+  .step__link-big {
+    margin-right: 60px;
+  }
+
+  .accordion__control {
+    padding: 10px 0;
+  }
+
+  .accordion__title {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .accordion__content-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .news {
+    padding-bottom: 50px;
+  }
+
+  .news__cards {
+    flex-wrap: wrap;
+  }
+
+  .news__card {
+    min-width: 48%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  .news__card:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .news__card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    font-size: 0;
+  }
+
+  .news__card-icon {
+    padding-top: 15px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .footer__info {
+    margin-right: 0;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 66px;
+    line-height: 110px;
+  }
+
+  .blockquote__text {
+    padding-top: 15px;
+    padding-left: 35px;
+    margin-right: 0;
+    font-size: 35px;
+    line-height: 49px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .blockquote__text::before {
+    display: none;
+  }
+
+  blockquote {
+    margin-left: 0px;
+  }
+
+  .education__link {
+    height: 120px;
+  }
+
+  .education__link-num {
+    margin-right: 21px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .education__link-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about {
+    padding: 50px 0;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .about__card-bg {
+    margin-bottom: 8px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .about__card-num {
+    padding: 27px 0;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .about__card-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .university {
+    margin-bottom: 38px;
+  }
+
+  .university__title {
+    margin-right: 0;
+    font-size: 68px;
+  }
+
+  .university__title span {
+    display: block;
+    font-size: 110px;
+    line-height: 120px;
+  }
+
+  .university__subtitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .teachers .university-descr {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .teachers .swiper-container {
+    margin-bottom: 50px;
+  }
+
+  .mission__container {
+    background-position: top 10% center;
+  }
+
+  .mission__left {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mission__right {
+    max-width: 80%;
+    margin: 180px auto 0;
+    text-align: center;
+  }
+
+  .step {
+    padding-bottom: 24px;
+  }
+
+  .step .step__container {
+    padding-top: 150px;
+  }
+
+  .step__title {
+    margin-bottom: 10px;
+  }
+
+  .step__images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: -60px;
+    left: 0;
+  }
+
+  .step__img {
+    width: 145px;
+    height: 120px;
+  }
+
+  .step__img:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .step__arrow {
+    width: 63px;
+    height: 73px;
+    left: 30%;
+    top: 90px;
+  }
+
+  .step__links {
+    flex-wrap: wrap;
+  }
+
+  .step__link {
+    position: relative;
+    margin-bottom: 16px;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .step__link-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .step__link-big {
+    width: 100%;
+    margin-right: 0;
+    height: 120px;
+  }
+
+  .step__link-small {
+    width: 48.5%;
+    height: 120px;
+  }
+
+  .step__link-small:not(:last-child) {
+    margin-right: auto;
+  }
+
+  .step .link-bg-1 {
+    background-image: url(../img/step_link-bg-2-mob.jpg);
+  }
+
+  .accordion {
+    padding-bottom: 50px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+  }
+
+  .footer-nav__list:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .footer-nav__item {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+
+  .footer__col-left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+    padding: 24px 0 12px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .blockquote {
+    padding-top: 13px;
+    padding-bottom: 38px;
+  }
+
+  .blockquote__container {
+    background-size: 30%;
+  }
+
+  .blockquote__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .teachers {
+    padding-bottom: 24px;
+  }
+
+  .teachers__photo {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .teachers__name {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .teachers__position {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .teachers .swiper-slide {
+    padding: 10px 8px;
+    min-height: 225px;
+    max-width: 119px;
+  }
+
+  .teachers .swiper-container {
+    margin-bottom: 30px;
+  }
+
+  .teachers .university-descr {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .university {
+    margin-bottom: 38px;
+  }
+
+  .university__title {
+    margin-right: 0;
+    font-size: 43px;
+    line-height: 53px;
+  }
+
+  .university__title span {
+    font-size: 66px;
+    line-height: 80px;
+  }
+
+  .university__subtitle {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .mission {
+    padding-top: 30px;
+  }
+
+  .mission__container {
+    background-position: top 30% center;
+  }
+
+  .mission__left {
+    max-width: 100%;
+  }
+
+  .mission__right {
+    max-width: 100%;
+  }
+
+  .step .step__container {
+    padding-top: 100px;
+  }
+
+  .step__link-text {
+    font-family: 'FuturaPT';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .accordion {
+    padding-bottom: 25px;
+  }
+
+  .news {
+    padding-bottom: 30px;
+  }
+
+  .news__cards {
+    flex-wrap: wrap;
+  }
+
+  .news__card {
+    min-width: 100%;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  .news__card-img {
+    height: 120px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 8px;
+  }
+
+  .news__link-wrapper {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .news__card-icon {
+    padding-top: 0;
+  }
+
+  .news__card-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .news__card-data {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  .news__card-link {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about__text-orange {
+    max-width: 100%;
+  }
+
+  .about .anakiwa {
+    margin-left: 20%;
+  }
 }

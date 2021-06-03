@@ -8,14 +8,18 @@
 
   &__cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 53px;
   }
 
+  &__card {
+    margin-bottom: 15px;
+    width: 317px;
+  }
+
   &__card-bg {
     margin-bottom: 20px;
-    width: 317px;
-    height: 220px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -103,5 +107,142 @@
     top: -200px;
     left: -710px;
   }
-
 }
+
+
+@media (max-width: 1440px) {
+  .about {
+    &__cards {
+      margin-bottom: 24px;
+    }
+
+    &__card {
+      width: 48%;
+    }
+
+    &__text-orange {
+      max-width: 70%;
+    }
+
+    .photo-4 {
+      width: 450px;
+      left: -466px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    &__text {
+      margin-bottom: 23px;
+      font-family: Fellaz,sans-serif;
+      font-weight: 400;
+      font-size: 43px;
+      line-height: 56px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .about {
+    &__text {
+      font-size: 35px;
+      line-height: 50px;
+    }
+
+    &__col {
+      margin-left: 0;
+    }
+
+    &__col-top   {
+      margin-bottom: 15px;
+    }
+
+    &__col-bottom {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 105px;
+    }
+
+    .photo-1 {
+      width: 100%;
+      margin-bottom: 65%;
+    }
+
+    .photo-2 {
+      margin-bottom: 0;
+      order: 2;
+    }
+
+    .photo-3 {
+      width: 50%;
+      top: 30%;
+      left: 0;
+    }
+
+    .anakiwa {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin-left: 30%;
+    }
+
+    .photo-4 {
+      position: static;
+      width: 100%;
+      order: 1;
+      margin-bottom: 0;
+    }
+
+    .saffron {
+      order: 3;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 0;
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__card-bg {
+      margin-bottom: 8px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &__card-num {
+      padding: 27px 0;
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    &__card-text {
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .about {
+    &__text-orange {
+      max-width: 100%;
+    }
+
+    .anakiwa {
+      margin-left: 20%;
+    }
+  }
+}
+
+
