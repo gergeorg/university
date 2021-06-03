@@ -83,7 +83,7 @@
     font-family: 'Fellaz', sans-serif;
     font-weight: normal;
     font-size: 98px;
-    background-image: url(../img/title-bg.jpg);
+    background-image: url('../img/title-bg.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
     -webkit-text-fill-color: transparent;
@@ -117,10 +117,6 @@
       font-size: 98px;
     }
   }
-}
-
-@media (max-width: 1024px) {
-
 }
 
 @media (max-width: 768px) {
