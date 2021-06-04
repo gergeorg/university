@@ -1070,6 +1070,7 @@ blockquote {
   .university__title {
     margin-right: 0;
     font-size: 68px;
+    background-image: url("../img/news_img.jpg");
   }
 
   .university__title span {
