@@ -85,9 +85,10 @@
     font-size: 98px;
     background-image: url('../img/title-bg.jpg');
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: cover;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
 
     span {
       display: block;
