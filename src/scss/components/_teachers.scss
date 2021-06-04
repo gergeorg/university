@@ -86,8 +86,8 @@
     background-image: url('../img/title-bg.jpg');
     background-repeat: no-repeat;
     background-size: 120%;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 
     span {
       display: block;

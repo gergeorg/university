@@ -381,11 +381,12 @@ blockquote {
   font-family: 'Fellaz', sans-serif;
   font-weight: normal;
   font-size: 98px;
-  background-image: url(../img/title-bg.jpg);
+  background-image: url("../img/title-bg.jpg");
   background-repeat: no-repeat;
   background-size: 120%;
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .university__title span {
