@@ -78,6 +78,15 @@
   display: flex;
   margin-bottom: 98px;
 
+  &__title-wrapper {
+    background-image: url('../img/title-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
   &__title {
     margin-right: 45px;
     font-family: 'Fellaz', sans-serif;
@@ -85,17 +94,13 @@
     font-size: 98px;
     background-image: url('../img/title-bg.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
-    span {
-      display: block;
-      font-size: 149px;
-      line-height: 169px;
-    }
+    display: block;
   }
+
 
   &__subtitle {
     padding-top: 20px;
@@ -122,17 +127,10 @@
 
 @media (max-width: 768px) {
   .university {
-
     margin-bottom: 38px;
 
     &__title {
       font-size: 68px;
-
-      span {
-        display: block;
-        font-size: 110px;
-        line-height: 120px;
-      }
     }
 
     &__subtitle {
@@ -195,17 +193,8 @@
     margin-bottom: 38px;
 
     &__title {
-      background-image: url('../img/news_img.jpg');
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
       font-size: 43px;
-      line-height: 53px;
-
-      span {
-      font-size: 66px;
-      line-height: 80px;
-      }
+      line-height: 43px;
     }
 
     &__subtitle {

@@ -1,0 +1,97 @@
+.accordion {
+  padding-bottom: 100px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid #FFD600;
+}
+
+.accordion__control {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accordion__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.accordion__content-text {
+  font-family: 'Futura PT';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.accordion__title {
+  font-family: 'Futura PT';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.accordion__icon {
+  display: block;
+  padding-left: 40px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../img/accordion-arrow.svg);
+  transform: rotate(0deg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease-out;
+}
+
+.accordion__link {
+  color: #71E5FF;
+}
+
+.accordion .open .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion .open .accordion__content {
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .accordion__control {
+    padding: 10px 0;
+  }
+
+  .accordion__title {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .accordion__content-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  .accordion {
+    padding-bottom: 25px;
+  }
+}

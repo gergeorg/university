@@ -1,6 +1,4 @@
-// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
-
-@import "./components/header";
+// @import "./components/header";
 @import "./components/hero";
 @import "./components/blockquote";
 @import "./components/education";
@@ -8,8 +6,8 @@
 @import "./components/teachers";
 @import "./components/mission";
 @import "./components/step";
-@import "./components/faq";
+// @import "./components/faq";
 @import "./components/news";
-@import "./components/footer";
+// @import "./components/footer";
 // @import "./components/modal";
 

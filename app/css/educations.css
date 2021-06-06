@@ -1,0 +1,161 @@
+.educations-hero {
+  padding-bottom: 130px;
+}
+
+.educations-hero__title {
+  margin-bottom: 54px;
+  font-family: 'Fellaz';
+  font-weight: 700;
+  font-size: 115px;
+  line-height: 162px;
+  text-align: right;
+  text-transform: uppercase;
+  background-image: url(../img/vocational_education-title-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.educations-hero__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.educations-hero__text {
+  font-family: 'Futura PT';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.educations-hero .info {
+  max-width: 547px;
+}
+
+.switch {
+  position: relative;
+}
+
+.switch__label {
+  border-radius: 9px;
+  max-width: 50px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.switch__label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .4s;
+}
+
+.switch__track {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  vertical-align: top;
+  height: 22px;
+  width: 40px;
+  border-radius: 11px;
+  background: #ECEFFC;
+}
+
+.switch__track:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .4s;
+}
+
+.switch__dot {
+  background: linear-gradient(222deg, #072B9D 25.94%, #7000FF 65.68%);
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  left: -1px;
+  top: -1px;
+  transform: translateX(var(--offset, 0));
+  transition: transform .4s;
+}
+
+.switch__dot:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  transition: opacity .4s;
+}
+
+.switch__input .switch:checked__dot {
+  --offset: 18px;
+  --gradient: 1;
+}
+
+@media (max-width: 1440px) {
+  .educations-hero__title {
+    font-size: 90px;
+    line-height: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .educations-hero__title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .educations-hero {
+    padding-bottom: 50px;
+  }
+
+  .educations-hero__title {
+    font-size: 60px;
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .educations-hero {
+    padding-bottom: 30px;
+  }
+
+  .educations-hero__title {
+    font-size: 41px;
+    line-height: 50px;
+  }
+
+  .educations-hero__info {
+    flex-direction: column;
+  }
+
+  .educations-hero .update {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .educations-hero {
+    padding-bottom: 17px;
+  }
+
+  .educations-hero__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}

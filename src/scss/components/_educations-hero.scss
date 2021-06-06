@@ -1,0 +1,101 @@
+@import "vars";
+
+.educations-hero {
+  padding-bottom: 130px;
+
+  &__title {
+    margin-bottom: 54px;
+    font-family: 'Fellaz';
+    font-weight: 700;
+    font-size: 115px;
+    line-height: 162px;
+    text-align: right;
+    text-transform: uppercase;
+    background-image: url(../img/vocational_education-title-bg.jpg);
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-family: 'Futura PT';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: $colorWhite;
+  }
+
+  .info {
+    max-width: 547px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .educations-hero {
+    &__title {
+      font-size: 90px;
+      line-height: 120px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .educations-hero {
+    &__title {
+      font-size: 80px;
+      line-height: 100px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .educations-hero {
+    padding-bottom: 50px;
+    &__title {
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .educations-hero {
+    padding-bottom: 30px;
+
+    &__title {
+      font-size: 41px;
+      line-height: 50px;
+    }
+
+    &__info {
+      flex-direction: column;
+    }
+
+    .update {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .educations-hero {
+    padding-bottom: 17px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+}
+
+@media (max-width: 320px) {
+
+}
+
