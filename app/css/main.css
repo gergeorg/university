@@ -387,7 +387,7 @@ blockquote {
 }
 
 .step {
-  padding-bottom: 100px;
+  padding-bottom: 15px;
 }
 
 .step__container {
@@ -427,6 +427,7 @@ blockquote {
 }
 
 .step__link {
+  display: inline-block;
   padding-top: 240px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -436,6 +437,10 @@ blockquote {
   font-size: 24px;
   line-height: 31px;
   color: #fff;
+}
+
+.step__link-text {
+  display: block;
 }
 
 .step__link-big {

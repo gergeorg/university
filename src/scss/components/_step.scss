@@ -1,5 +1,5 @@
 .step {
-  padding-bottom: 100px;
+  padding-bottom: 15px;
 
   &__container {
     padding-top: 301px;
@@ -40,6 +40,7 @@
     // display: flex;
     // align-items: center;
     // justify-content: center;
+    display: inline-block;
     padding-top: 240px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,9 +52,9 @@
     color: $colorWhite;
   }
 
-  // &__link-text {
-  //   display: block;
-  // }
+  &__link-text {
+    display: block;
+  }
 
   &__link-big {
     width: 710px;

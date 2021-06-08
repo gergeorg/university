@@ -23,7 +23,7 @@
 }
 
 .educations-hero__text {
-  font-family: 'Futura PT';
+  font-family: 'FuturaPT';
   font-weight: 300;
   font-size: 18px;
   line-height: 23px;
@@ -34,8 +34,25 @@
   max-width: 547px;
 }
 
+.bachelor-title {
+  margin-bottom: 54px;
+  font-family: 'Fellaz';
+  font-weight: 700;
+  font-size: 197px;
+  line-height: 277px;
+  text-align: right;
+  text-transform: uppercase;
+  background-image: url(../img/bachelor-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .switch {
   position: relative;
+  margin-right: 25px;
 }
 
 .switch__label {
@@ -105,10 +122,210 @@
   --gradient: 1;
 }
 
+.faculties {
+  padding-bottom: 100px;
+}
+
+.faculties__filter {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.faculties__filter-checkbox {
+  display: flex;
+}
+
+.faculties__filter-checkbox:not(:last-child) {
+  margin-right: 50px;
+}
+
+.faculties__filter-text {
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.faculties__filter-text:not(:last-child) {
+  margin-right: 25px;
+}
+
+.faculties__item {
+  display: flex;
+  padding: 50px 0;
+  border-bottom: 1px solid #4E4E4E;
+}
+
+.faculties__link {
+  padding-right: 60px;
+  width: 100%;
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-size: 45px 45px;
+  background-position: right center;
+}
+
+.faculties__link-data {
+  display: block;
+  margin-right: 175px;
+  margin-bottom: 36px;
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.faculties__link-descr {
+  color: #fff;
+}
+
+.faculties__link-title {
+  margin-bottom: 15px;
+  font-family: 'Fellaz';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.faculties__link-items {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.faculties .freeplace {
+  color: #FFD600;
+}
+
+.faculties__link-format {
+  display: block;
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+}
+
+.faculties .filter-mobile {
+  display: none;
+}
+
+.faculties .filter-mobile__text {
+  padding-right: 25px;
+  font-family: 'FuturaPT';
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  background-image: url(../img/filter.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.documents {
+  padding-top: 61px;
+  padding-bottom: 39px;
+  background-color: #fff;
+  background-image: url(../img/spo-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 20%;
+}
+
+.documents__container {
+  background-image: url(../img/document-arrow-bg.png);
+  background-repeat: no-repeat;
+  background-size: 211px;
+  background-position: right 45%;
+}
+
+.documents__top {
+  margin-left: 235px;
+  margin-bottom: 206px;
+}
+
+.documents__title {
+  max-width: 474px;
+  margin-bottom: 45px;
+  font-family: 'Fellaz';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #17181A;
+}
+
+.documents__title span {
+  color: #FFD600;
+}
+
+.documents__top-text {
+  display: flex;
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #17181A;
+}
+
+.documents__full-time {
+  max-width: 474px;
+}
+
+.documents__full-time span {
+  display: block;
+}
+
+.documents__extramural span {
+  display: block;
+}
+
+.documents__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.documents__col-right {
+  max-width: 710px;
+}
+
+.documents__col-left {
+  max-width: 472px;
+}
+
+.documents__item {
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #17181A;
+}
+
 @media (max-width: 1440px) {
   .educations-hero__title {
     font-size: 90px;
     line-height: 120px;
+  }
+
+  .bachelor-title {
+    font-size: 150px;
+    line-height: 170px;
+  }
+
+  .faculties__link-title {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .faculties__link-data {
+    margin-right: 150px;
+  }
+
+  .documents__top {
+    margin-left: 180px;
   }
 }
 
@@ -116,6 +333,11 @@
   .educations-hero__title {
     font-size: 80px;
     line-height: 100px;
+  }
+
+  .bachelor-title {
+    font-size: 110px;
+    line-height: 120px;
   }
 }
 
@@ -128,9 +350,91 @@
     font-size: 60px;
     line-height: 80px;
   }
+
+  .bachelor-title {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  .faculties__link-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .faculties__item-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  .faculties__link-format {
+    order: 1;
+  }
+
+  .faculties__link-data {
+    margin: 0;
+    order: 2;
+  }
+
+  .faculties__item {
+    padding: 30px 0;
+    flex-direction: column;
+  }
+
+  .faculties__link {
+    padding-right: 60px;
+    background-size: 35px 35px;
+  }
+
+  .documents__container {
+    background-size: 180px;
+  }
+
+  .documents__top {
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  .documents__top-text {
+    flex-direction: column;
+  }
+
+  .documents .color {
+    color: #71E5FF;
+  }
+
+  .documents .mobile-none {
+    display: none;
+  }
+
+  .documents__bottom {
+    flex-direction: column;
+  }
+
+  .documents__full-time {
+    max-width: 100%;
+  }
+
+  .documents__col-left {
+    margin-bottom: 25px;
+    max-width: 100%;
+  }
+
+  .documents__col-right {
+    max-width: 100%;
+  }
+
+  .documents__title {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
+  .bachelor-title {
+    font-size: 70px;
+    line-height: 80px;
+  }
+
   .educations-hero {
     padding-bottom: 30px;
   }
@@ -147,9 +451,23 @@
   .educations-hero .update {
     margin-bottom: 10px;
   }
+
+  .documents__container {
+    background-size: 180px;
+  }
+
+  .documents__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
 }
 
 @media (max-width: 540px) {
+  .bachelor-title {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
   .educations-hero {
     padding-bottom: 17px;
   }
@@ -157,5 +475,96 @@
   .educations-hero__title {
     font-size: 24px;
     line-height: 34px;
+  }
+
+  .faculties__link-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .faculties__link-data {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .faculties__link-items {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .faculties__item {
+    padding: 16px 0;
+  }
+
+  .faculties__link {
+    padding-right: 0;
+    background-image: none;
+  }
+
+  .faculties__link-format {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .faculties .filter-mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .faculties__filter {
+    display: none;
+  }
+
+  .faculties .filter-active {
+    display: block;
+  }
+
+  .faculties__filter-checkbox {
+    display: flex;
+  }
+
+  .faculties__filter-checkbox:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .documents {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  .documents__container {
+    background-size: 65px;
+  }
+
+  .documents__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  .documents__title:first-child {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 26px;
+  }
+
+  .documents__top {
+    margin-bottom: 12px;
+  }
+
+  .documents__top-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .documents__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .documents__col-left {
+    margin-bottom: 0;
   }
 }
