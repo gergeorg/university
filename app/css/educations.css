@@ -52,28 +52,21 @@
 
 .switch {
   position: relative;
-  margin-right: 25px;
 }
 
-.switch__label {
+.switch input {
+  display: none;
+}
+
+.switch input + label {
   border-radius: 9px;
-  max-width: 50px;
+  margin-right: 25px;
   display: block;
   cursor: pointer;
   position: relative;
 }
 
-.switch__label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transition: opacity .4s;
-}
-
-.switch__track {
+.switch input + label .switch__track {
   position: relative;
   display: inline-block;
   z-index: 1;
@@ -84,21 +77,10 @@
   background: #ECEFFC;
 }
 
-.switch__track:before {
-  content: '';
+.switch input + label .switch__track .switch__dot {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transition: opacity .4s;
-}
-
-.switch__dot {
-  background: linear-gradient(222deg, #072B9D 25.94%, #7000FF 65.68%);
-  position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   left: -1px;
   top: -1px;
@@ -106,7 +88,7 @@
   transition: transform .4s;
 }
 
-.switch__dot:before {
+.switch input + label .switch__track .switch__dot:before {
   content: '';
   position: absolute;
   left: 0;
@@ -114,12 +96,82 @@
   right: 0;
   bottom: 0;
   border-radius: inherit;
+  background: linear-gradient(222deg, #072B9D 25.94%, #7000FF 65.68%);
   transition: opacity .4s;
 }
 
-.switch__input .switch:checked__dot {
+.switch input:checked + label {
   --offset: 18px;
-  --gradient: 1;
+}
+
+.filter-mobile {
+  display: none;
+}
+
+.filter-mobile__text {
+  padding-right: 25px;
+  font-family: 'FuturaPT';
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  background-image: url(../img/filter.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.filter {
+  display: flex;
+}
+
+.filter__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__checkbox {
+  display: flex;
+}
+
+.filter__checkbox:not(:last-child) {
+  margin-right: 50px;
+}
+
+.filter__text {
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.filter__text:not(:last-child) {
+  margin-right: 25px;
+}
+
+.filter__items-list {
+  display: flex;
+}
+
+.filter__items-item {
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+}
+
+.filter__items-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.filter__items-link {
+  font-weight: 400;
+  color: #fff;
+  transition: color 0.3s ease-out;
+}
+
+.filter__items-link:hover {
+  color: #FFD600;
 }
 
 .faculties {
@@ -166,6 +218,10 @@
   background-position: right center;
 }
 
+.faculties__link:hover .faculties__link-title {
+  color: #FFD600;
+}
+
 .faculties__link-data {
   display: block;
   margin-right: 175px;
@@ -188,6 +244,7 @@
   font-size: 36px;
   line-height: 44px;
   color: #fff;
+  transition: color .3s ease-in-out;
 }
 
 .faculties__link-items {
@@ -209,21 +266,6 @@
   font-size: 16px;
   line-height: 21px;
   color: #fff;
-}
-
-.faculties .filter-mobile {
-  display: none;
-}
-
-.faculties .filter-mobile__text {
-  padding-right: 25px;
-  font-family: 'FuturaPT';
-  font-size: 18px;
-  line-height: 23px;
-  color: #fff;
-  background-image: url(../img/filter.svg);
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 .documents {
@@ -338,6 +380,10 @@
   .bachelor-title {
     font-size: 110px;
     line-height: 120px;
+  }
+
+  .filter__container {
+    flex-wrap: wrap;
   }
 }
 
@@ -477,6 +523,28 @@
     line-height: 34px;
   }
 
+  .filter-mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .filter__checkbox {
+    display: flex;
+  }
+
+  .filter__checkbox:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .filter-active {
+    display: block;
+  }
+
   .faculties__link-title {
     font-size: 18px;
     line-height: 22px;
@@ -505,28 +573,6 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
-  }
-
-  .faculties .filter-mobile {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  .faculties__filter {
-    display: none;
-  }
-
-  .faculties .filter-active {
-    display: block;
-  }
-
-  .faculties__filter-checkbox {
-    display: flex;
-  }
-
-  .faculties__filter-checkbox:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 20px;
   }
 
   .documents {

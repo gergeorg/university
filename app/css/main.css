@@ -535,7 +535,7 @@ blockquote {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 110px;
+  height: 155px;
 }
 
 @media (max-width: 1440px) {
@@ -589,7 +589,19 @@ blockquote {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
+  .blockquote__container {
+    background-position: bottom right;
+    background-size: contain;
+  }
+
+  .blockquote__text {
+    padding-left: 150px;
+    margin-right: 15%;
+    font-size: 35px;
+    line-height: 49px;
+  }
+
   .education__container {
     display: flex;
     flex-wrap: wrap;
@@ -609,7 +621,9 @@ blockquote {
     font-size: 30px;
     line-height: 42px;
   }
+}
 
+@media (max-width: 1200px) {
   .about__text {
     margin-bottom: 23px;
     font-family: Fellaz,sans-serif;
@@ -642,17 +656,6 @@ blockquote {
   .hero__title {
     font-size: 100px;
     line-height: 120px;
-  }
-
-  .blockquote__container {
-    background-position: bottom right;
-  }
-
-  .blockquote__text {
-    padding-left: 150px;
-    margin-right: 15%;
-    font-size: 35px;
-    line-height: 49px;
   }
 
   .about__text {

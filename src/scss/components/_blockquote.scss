@@ -72,10 +72,11 @@ blockquote {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
   .blockquote {
     &__container {
       background-position: bottom right;
+      background-size: contain;
     }
 
     &__text {

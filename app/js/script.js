@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
   const filterMobile = document.querySelector('.filter-mobile')
-  const filter = document.querySelector('.faculties__filter')
+  const filter = document.querySelector('.filter')
 
   filterMobile.addEventListener('click', () => {
     filter.classList.toggle('filter-active')

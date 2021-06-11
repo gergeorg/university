@@ -58,41 +58,55 @@
   </div>
 </section>
 
-      <section class="faculties">
-  <div class="faculties__container container">
+      <div class="filter__container container">
 
-    <button class="filter-mobile btn-reset">
-      <span class="filter-mobile__text">Фильтры</span>
-    </button>
+  <button class="filter-mobile btn-reset">
+    <span class="filter-mobile__text">Фильтры</span>
+  </button>
 
-    <div class="faculties__filter">
-      <div class="faculties__filter-checkbox">
-        <span class="faculties__filter-text">Очное</span>
-        <div class="switch">
-          <label class="switch__label">
-            <input  class="switch__input visually-hidden" type="checkbox" checked>
-            <div class="switch__track">
-              <div class="switch__dot"></div>
-            </div>
-          </label>
-        </div>
-        <span class="faculties__filter-text">Заочное</span>
-      </div>
-
-      <div class="faculties__filter-checkbox">
-        <span class="faculties__filter-text">Бюджет</span>
-        <div class="switch">
-          <label class="switch__label">
-            <input  class="switch__input visually-hidden" type="checkbox" checked>
-            <div class="switch__track">
-              <div class="switch__dot"></div>
-            </div>
-          </label>
-        </div>
-        <span class="faculties__filter-text">Коммерция</span>
-      </div>
+  <div class="filter">
+    <div class="filter__checkbox">
+      <span class="filter__text">Очное</span>
+      <div class="switch">
+        <input type="checkbox" id="switch-left" checked>
+        <label for="switch-left">
+          <div class="switch__track">
+            <div class="switch__dot"></div>
+          </div>
+        </label>
+    </div>
+      <span class="filter__text">Заочное</span>
     </div>
 
+    <div class="filter__checkbox">
+      <span class="filter__text">Бюджет</span>
+      <div class="switch">
+        <input type="checkbox" id="switch-right" checked>
+        <label for="switch-right">
+          <div class="switch__track">
+            <div class="switch__dot"></div>
+          </div>
+        </label>
+    </div>
+      <span class="filter__text">Коммерция</span>
+    </div>
+  </div>
+
+  <div class="filter__items">
+    <ul class="filter__items-list list-reset">
+      <li class="filter__items-item">Предметы: </li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">Обществознание</a></li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">Математика</a></li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">ИКТ</a></li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">История</a></li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">Физика</a></li>
+      <li class="filter__items-item"><a href="#" class="filter__items-link">Иностранный язык</a></li>
+    </ul>
+  </div>
+</div>
+
+      <section class="faculties">
+  <div class="faculties__container container">
     <ul class="faculties__list list-reset">
       <li class="faculties__item">
         <div class="faculties__item-info">
