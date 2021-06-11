@@ -515,7 +515,7 @@ blockquote {
 .news__card-data {
   display: block;
   margin-bottom: 10px;
-  font-family: 'Futura PT';
+  font-family: 'FuturaPT';
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
@@ -524,7 +524,7 @@ blockquote {
 
 .news__card-link {
   position: relative;
-  font-family: 'Futura PT';
+  font-family: 'FuturaPT';
   font-weight: 40;
   font-size: 24px;
   line-height: 31px;
@@ -575,6 +575,12 @@ blockquote {
     max-width: 70%;
   }
 
+  .about__card-num {
+    padding: 25px 0;
+    font-size: 74px;
+    line-height: 80px;
+  }
+
   .about .photo-4 {
     width: 450px;
     left: -466px;
@@ -611,10 +617,17 @@ blockquote {
     display: flex;
     align-items: center;
     width: 100%;
+    padding: 20px 20px;
   }
 
   .education__link:not(:last-child) {
     margin-bottom: 10px;
+  }
+
+  .education__link-num {
+    margin-right: 21px;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .education__link-text {
@@ -818,12 +831,6 @@ blockquote {
   .about__text {
     font-size: 18px;
     line-height: 22px;
-  }
-
-  .about__card-num {
-    padding: 27px 0;
-    font-size: 36px;
-    line-height: 46px;
   }
 
   .about__card-text {

@@ -124,6 +124,12 @@
       max-width: 70%;
     }
 
+    &__card-num {
+      padding: 25px 0;
+      font-size: 74px;
+      line-height: 80px;
+    }
+
     .photo-4 {
       width: 450px;
       left: -466px;
@@ -220,11 +226,11 @@
       line-height: 22px;
     }
 
-    &__card-num {
-      padding: 27px 0;
-      font-size: 36px;
-      line-height: 46px;
-    }
+    // &__card-num {
+    //   padding: 27px 0;
+    //   font-size: 36px;
+    //   line-height: 46px;
+    // }
 
     &__card-text {
       font-size: 16px;
