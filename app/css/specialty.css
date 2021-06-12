@@ -1,0 +1,239 @@
+.specialty {
+  padding-bottom: 700px;
+  background-image: url(../img/specialty-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 100px center;
+}
+
+.specialty__title {
+  margin-bottom: 73px;
+  font-family: 'Fellaz';
+  font-weight: 700;
+  font-size: 98px;
+  line-height: 138px;
+  text-transform: uppercase;
+  background-image: url(../img/bachelor-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.specialty__list {
+  padding: 0;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialty__item-big {
+  display: block;
+  font-family: 'FuturaPT';
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 123px;
+  color: #fff;
+}
+
+.specialty__item-text {
+  font-family: 'FuturaPT';
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.specialty__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.specialty__info-title {
+  padding-bottom: 20px;
+  margin-bottom: 58px;
+  position: relative;
+  font-family: 'Fellaz';
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fff;
+}
+
+.specialty__info-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.specialty__exams {
+  max-width: 710px;
+}
+
+.specialty__marks {
+  max-width: 546px;
+}
+
+.specialty__exams-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialty__exams-text {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.specialty__exams-num {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 123px;
+  color: #fff;
+}
+
+.specialty .item {
+  display: block;
+}
+
+.specialty__exams-text--from {
+  margin-right: 25px;
+}
+
+.specialty__marks-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialty__marks-item {
+  margin-bottom: 44px;
+}
+
+.specialty__marks-item:not(:last-child) {
+  margin-right: 5%;
+}
+
+.specialty__marks-item:last-child {
+  max-width: 366px;
+}
+
+.specialty__marks-mark {
+  display: block;
+  font-family: 'FuturaPT';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.specialty__marks-text {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.specialty__bottom {
+  display: flex;
+  margin-bottom: 100px;
+  background-image: url(../img/specialty-arrow.png);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.specialty__about {
+  max-width: 710px;
+  margin-right: 135px;
+}
+
+.specialty__about-title {
+  margin-bottom: 20px;
+}
+
+.specialty__about-descr {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.specialty__owner {
+  padding-top: 70px;
+}
+
+.specialty__owner-bio {
+  display: block;
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.specialty__owner-position {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.specialty__owner-position:nth-child(2) {
+  display: block;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1366px) {
+  .specialty__title {
+    margin-bottom: 60px;
+    font-size: 75px;
+    line-height: 85px;
+  }
+
+  .specialty__list {
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+  }
+
+  .specialty__item-big {
+    font-size: 60px;
+    line-height: 85px;
+  }
+
+  .specialty__info-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .specialty__exams {
+    max-width: 48.5%;
+  }
+
+  .specialty__marks {
+    max-width: 48.5%;
+  }
+
+  .specialty__exams-num {
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .specialty__info {
+    margin-bottom: 15px;
+  }
+}

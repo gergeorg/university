@@ -50,6 +50,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.magistracy {
+  font-size: 176px;
+  line-height: 247px;
+  background-position: center;
+}
+
 .switch {
   position: relative;
 }
@@ -259,6 +265,10 @@
   color: #FFD600;
 }
 
+.faculties .anakiwa {
+  color: #71E5FF;
+}
+
 .faculties__link-format {
   display: block;
   font-family: 'FuturaPT';
@@ -354,6 +364,11 @@
 
   .bachelor-title {
     font-size: 150px;
+    line-height: 170px;
+  }
+
+  .magistracy {
+    font-size: 140px;
     line-height: 170px;
   }
 

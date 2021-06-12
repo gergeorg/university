@@ -50,6 +50,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+.magistracy {
+  font-size: 176px;
+  line-height: 247px;
+  background-position: center;
+}
+
 
 @media (max-width: 1440px) {
   .educations-hero {
@@ -61,6 +67,11 @@
 
   .bachelor-title {
     font-size: 150px;
+    line-height: 170px;
+  }
+
+  .magistracy {
+    font-size: 140px;
     line-height: 170px;
   }
 }

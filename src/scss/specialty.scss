@@ -1,0 +1,245 @@
+@import "vars";
+
+.specialty {
+  padding-bottom: 700px;
+  background-image: url(../img/specialty-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 100px center;
+
+  &__title {
+    margin-bottom: 73px;
+    font-family: 'Fellaz';
+    font-weight: 700;
+    font-size: 98px;
+    line-height: 138px;
+    text-transform: uppercase;
+    background-image: url(../img/bachelor-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__list {
+    padding: 0;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-big {
+    display: block;
+    font-family:'FuturaPT';
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 123px;
+    color: $colorWhite;
+  }
+
+  &__item-text {
+    font-family:'FuturaPT';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__info-title {
+    padding-bottom: 20px;
+    margin-bottom: 58px;
+    position: relative;
+    font-family: 'Fellaz';
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: $colorWhite;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid rgba($colorWhite, 0.3);
+    }
+  }
+
+  &__exams {
+    max-width: 710px;
+  }
+
+  &__marks {
+    max-width: 546px;
+  }
+
+  &__exams-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__exams-text {
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  &__exams-num {
+    // display: block;
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 123px;
+    color: $colorWhite;
+  }
+
+  .item {
+    display: block;
+  }
+
+  &__exams-text--from {
+    margin-right: 25px;
+  }
+
+  &__marks-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__marks-item {
+    margin-bottom: 44px;
+
+    &:not(:last-child) {
+      margin-right: 5%;
+    }
+
+    &:last-child {
+      max-width: 366px;
+    }
+  }
+
+  &__marks-mark {
+    display: block;
+    font-family: 'FuturaPT';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+  }
+
+  &__marks-text {
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $colorWhite;
+  }
+
+  &__bottom {
+    display: flex;
+    margin-bottom: 100px;
+    background-image: url(../img/specialty-arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  &__about {
+    max-width: 710px;
+    margin-right: 135px;
+  }
+
+  &__about-title {
+    margin-bottom: 20px;
+  }
+
+  &__about-descr {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 31px;
+  color: $colorWhite;
+  }
+
+  &__owner {
+    padding-top: 70px;
+  }
+
+  &__owner-bio {
+    display: block;
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: $colorWhite;
+  }
+
+  &__owner-position {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: $colorWhite;
+
+    &:nth-child(2){
+      display: block;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .specialty {
+    &__title {
+      margin-bottom: 60px;
+      font-size: 75px;
+      line-height: 85px;
+    }
+
+    &__list {
+      margin-bottom: 70px;
+      flex-wrap: wrap;
+    }
+
+    &__item-big {
+      font-size: 60px;
+      line-height: 85px;
+    }
+
+    &__info-title {
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    &__exams {
+      max-width: 48.5%;
+    }
+
+    &__marks {
+      max-width: 48.5%;
+    }
+
+    &__exams-num {
+      font-size: 65px;
+      line-height: 70px;
+    }
+
+    &__info {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {}
