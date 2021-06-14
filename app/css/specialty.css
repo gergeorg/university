@@ -526,9 +526,23 @@
     margin-bottom: 15px;
   }
 
+  .specialty__about {
+    max-width: 610px;
+    margin-right: 100px;
+  }
+
+  .specialty__bottom {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
   .contacts {
     padding-top: 85px;
     padding-bottom: 50px;
+  }
+
+  .specialty__bottom {
+    background-position: top 100px;
   }
 }
 

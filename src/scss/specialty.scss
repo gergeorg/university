@@ -145,6 +145,7 @@
 
   &__bottom {
     display: flex;
+    // flex-wrap: wrap;
     margin-bottom: 100px;
     background-image: url(../img/specialty-arrow.png);
     background-repeat: no-repeat;
@@ -171,6 +172,7 @@
 
   &__owner {
     padding-top: 70px;
+
   }
 
   &__owner-bio {
@@ -448,6 +450,16 @@
     &__info {
       margin-bottom: 15px;
     }
+
+    &__about {
+      max-width: 610px;
+      margin-right: 100px;
+  }
+
+    &__bottom {
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
   }
 
   .contacts {
@@ -455,5 +467,17 @@
     padding-bottom: 50px;
   }
 }
+
+@media (max-width: 1366px) {
+  .specialty {
+    &__bottom {
+      background-position:  top 100px;
+      // margin-bottom: 40px;
+      // flex-wrap: wrap;
+    }
+  }
+
+}
+
 
 @media (max-width: 1024px) {}
