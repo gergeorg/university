@@ -196,6 +196,295 @@
   margin-bottom: 35px;
 }
 
+.open-dors {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+.open-dors__title {
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.open-dors__title::after {
+  border-bottom: 1px solid rgba(23, 24, 26, 0.3);
+}
+
+.open-dors__title::before {
+  background-image: url(../img/title-arrow-black.svg);
+}
+
+.open-dors__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.open-dors__card {
+  display: flex;
+  width: 710px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.open-dors__card-big {
+  padding: 32px 161px 57px 32px;
+  background-image: url(../img/about_bg-1.jpg);
+}
+
+.open-dors__card-small {
+  padding: 32px 48px;
+  width: 545px;
+  background-image: url(../img/about_bg-2.jpg);
+}
+
+.open-dors__date {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.open-dors__num {
+  font-family: 'Fellaz';
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 144px;
+  color: #fff;
+}
+
+.open-dors__mounth {
+  display: block;
+  font-family: 'FuturaPT';
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 96px;
+  text-align: right;
+  color: #fff;
+}
+
+.open-dors__place {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.open-dors__time {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.open-dors__address {
+  font-family: 'FuturaPT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.contacts {
+  padding-top: 185px;
+  padding-bottom: 100px;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  margin-bottom: 46px;
+}
+
+.contacts__title::before {
+  background-image: none;
+}
+
+.contacts__info {
+  position: relative;
+}
+
+.contacts__info::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 211px;
+  height: 211px;
+  background-image: url(../img/specialty-arrow.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transform: rotate(180deg);
+}
+
+.contacts__info,
+.contacts__map {
+  width: 100%;
+  max-width: 48.5%;
+}
+
+.contacts__info-text {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFD600;
+}
+
+.contacts__info-tel,
+.contacts__info-address {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  color: #fff;
+}
+
+.contacts__info-address {
+  font-style: normal;
+}
+
+.map {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  max-width: 680px;
+  height: 700px;
+}
+
+.map-links__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-links__item:not(:last-child) {
+  margin-right: 50px;
+  margin-bottom: 32px;
+}
+
+.map-links__link {
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.map-links__link-active {
+  font-weight: 450;
+  color: #FFD600;
+  opacity: 1;
+}
+
+.step {
+  padding-bottom: 15px;
+}
+
+.step__container {
+  padding-top: 301px;
+  position: relative;
+}
+
+.step__images {
+  position: absolute;
+  top: -80px;
+  left: 15px;
+}
+
+.step__img {
+  width: 354px;
+  height: 164px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.step__img:not(:last-child) {
+  margin-right: 15px;
+}
+
+.step__arrow {
+  position: absolute;
+  left: 150px;
+  top: 130px;
+}
+
+.step__title {
+  margin-bottom: 55px;
+}
+
+.step__links {
+  display: flex;
+}
+
+.step__link {
+  display: inline-block;
+  padding-top: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image .3s ease-in-out;
+  font-family: 'FuturaPT';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+}
+
+.step__link-text {
+  display: block;
+}
+
+.step__link-big {
+  width: 710px;
+  height: 220px;
+  margin-right: 134px;
+  background-image: url(../img/step_link-bg-1.jpg);
+}
+
+.step__link-big:hover {
+  background-image: url(../img/01.gif);
+}
+
+.step__link-small {
+  width: 277px;
+  height: 220px;
+}
+
+.step__link-small:not(:last-child) {
+  margin-right: 22px;
+}
+
+.step .link-bg-1 {
+  background-image: url(../img/step_link-bg-2.jpg);
+}
+
+.step .link-bg-1:hover {
+  background-image: url(../img/01.gif);
+}
+
+.step .link-bg-2 {
+  background-image: url(../img/step_link-bg-3.jpg);
+}
+
+.step .link-bg-2:hover {
+  background-image: url(../img/01.gif);
+}
+
+.step {
+  padding-bottom: 100px;
+}
+
+.step__images {
+  display: none;
+}
+
+.step__container {
+  padding-top: 0;
+}
+
 @media (max-width: 1366px) {
   .specialty__title {
     margin-bottom: 60px;
@@ -235,5 +524,104 @@
 
   .specialty__info {
     margin-bottom: 15px;
+  }
+
+  .contacts {
+    padding-top: 85px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .step__link-big {
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    padding-bottom: 24px;
+  }
+
+  .step .step__container {
+    padding-top: 150px;
+  }
+
+  .step__title {
+    margin-bottom: 10px;
+  }
+
+  .step__images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: -60px;
+    left: 0;
+  }
+
+  .step__img {
+    width: 145px;
+    height: 120px;
+  }
+
+  .step__img:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .step__arrow {
+    width: 63px;
+    height: 73px;
+    left: 30%;
+    top: 90px;
+  }
+
+  .step__links {
+    flex-wrap: wrap;
+  }
+
+  .step__link {
+    position: relative;
+    margin-bottom: 16px;
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .step__link-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .step__link-big {
+    width: 100%;
+    margin-right: 0;
+    height: 120px;
+  }
+
+  .step__link-small {
+    width: 48.5%;
+    height: 120px;
+  }
+
+  .step__link-small:not(:last-child) {
+    margin-right: auto;
+  }
+
+  .step .link-bg-1 {
+    background-image: url(../img/step_link-bg-2-mob.jpg);
+  }
+}
+
+@media (max-width: 540px) {
+  .step .step__container {
+    padding-top: 100px;
+  }
+
+  .step__link-text {
+    font-family: 'FuturaPT';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
   }
 }

@@ -198,6 +198,215 @@
   }
 }
 
+.open-dors {
+  background-color: $colorWhite;
+  padding: 100px 0;
+
+
+  &__title {
+    color: $blackColor;
+    margin-bottom: 40px;
+
+    &::after {
+      border-bottom: 1px solid rgba(#17181A, 0.3);
+    }
+
+    &::before {
+      background-image: url(../img/title-arrow-black.svg);
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    width: 710px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__card-big {
+    padding: 32px 161px 57px 32px;
+    // margin-right: 135px;
+    background-image: url(../img/about_bg-1.jpg);
+  }
+
+  &__card-small {
+    padding: 32px 48px;
+    width: 545px;
+    background-image: url(../img/about_bg-2.jpg);
+  }
+
+  &__date {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__num {
+    // display: block;
+    font-family: 'Fellaz';
+    font-weight: 400;
+    font-size: 144px;
+    line-height: 144px;
+    color: $colorWhite;
+  }
+
+  &__mounth {
+    display: block;
+    font-family: 'FuturaPT';
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: right;
+    color: $colorWhite;
+  }
+
+  &__place {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // margin-bottom: 20px;
+    // align-items: flex-end;
+  }
+
+  &__time {
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    color: $colorWhite;
+  }
+
+  &__address {
+    font-family: 'FuturaPT';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 46px;
+    color: $colorWhite;
+  }
+}
+
+.contacts {
+  padding-top: 185px;
+  padding-bottom: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+
+    &::before {
+      background-image: none;
+    }
+  }
+
+  &__info {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 211px;
+      height: 211px;
+      background-image: url(../img/specialty-arrow.png);
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__info,
+  &__map {
+    width: 100%;
+    max-width: 48.5%;
+  }
+
+  &__info-text {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 36px;
+    color: $colorGold;
+  }
+
+  &__info-tel,
+  &__info-address {
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    color: $colorWhite;
+  }
+
+  &__info-address {
+    font-style: normal;
+  }
+}
+
+.map {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  max-width: 680px;
+  height: 700px;
+}
+
+.map-links {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__link {
+    font-family: 'FuturaPT';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: $colorWhite;
+    opacity: 0.5;
+  }
+
+  &__link-active {
+    font-weight: 450;
+    color: $colorGold;
+    opacity: 1;
+  }
+}
+
+@import "./components/step";
+
+.step {
+  padding-bottom: 100px;
+}
+
+.step__images {
+  display: none;
+}
+
+.step__container {
+  padding-top: 0;
+
+}
+
 @media (max-width: 1366px) {
   .specialty {
     &__title {
@@ -239,6 +448,11 @@
     &__info {
       margin-bottom: 15px;
     }
+  }
+
+  .contacts {
+    padding-top: 85px;
+    padding-bottom: 50px;
   }
 }
 

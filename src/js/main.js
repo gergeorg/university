@@ -45,3 +45,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
+
+
+
+
+  // tabs
+
+  // if (tabs) {
+  //   tabs.addEventListener('click', (e) => {
+  //     if (e.target.classList.contains('tabs__btn')) {
+  //       const tabsPath = e.target.dataset.tabsPath;
+  //       tabsHandler(tabsPath);
+  //     }
+  //   })
+
+  //   const tabsHandler = (path) => {
+  //     tabsBtn.forEach(el => {el.classList.remove('tabs__btn-active')})
+  //     document.querySelector(`[data-tabs-path="${path}"]`).classList.add('tabs__btn-active')
+
+  //     tabsContent.forEach(el => {el.classList.remove('tabs-content-active')})
+  //     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs-content-active')
+  //   }
+  // }

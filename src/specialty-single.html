@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="css/footer.min.css">
   <link rel="stylesheet" href="css/specialty.min.css">
 
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш_API-ключ&lang=ru_RU"></script>
   <script defer src="js/vendor.min.js"></script>
+  <!-- <script defer src="js/map.js"></script> -->
   <script defer src="js/script.js"></script>
 </head>
 
@@ -25,7 +27,7 @@
 
     <main class="main">
       @include('partials/specialty.html')
-
+      @include('partials/step.html')
     </main>
 
     @include('partials/footer.html')

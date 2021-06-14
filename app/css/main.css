@@ -609,19 +609,9 @@ blockquote {
   }
 
   .education__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .education__link {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 20px 20px;
-  }
-
-  .education__link:not(:last-child) {
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 266px;
   }
 
   .education__link-num {
@@ -633,6 +623,10 @@ blockquote {
   .education__link-text {
     font-size: 30px;
     line-height: 42px;
+  }
+
+  .education__link {
+    padding: 40px 30px;
   }
 }
 
@@ -669,6 +663,22 @@ blockquote {
   .hero__title {
     font-size: 100px;
     line-height: 120px;
+  }
+
+  .education__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .education__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .education__link:not(:last-child) {
+    margin-bottom: 10px;
   }
 
   .about__text {
